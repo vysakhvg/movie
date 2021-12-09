@@ -1,0 +1,13 @@
+.body{
+    background-color:currentColor;
+    }
+
+.name{
+    margin-top: 75px;
+    color: white;
+}
+.image3{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+}

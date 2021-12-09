@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action="" method="post" enctype="multipart/form-data">
+    <h1 style="text-align: center;margin-top: 64px;font-family:Arial, Helvetica, sans-serif;margin-left: 508px;">Add</h1>
+    {% csrf_token %}
+    <div style="margin-left: 520px; margin-top: 52px;">  
+    <div>
+        <input type="text" class="form-control is-valid" placeholder="Enter movie name" name="name" required style="font-size: large; width: 249px;height: 32px;margin-top: 14px;">
+    </div>
+    <div >
+    <input type="text" class="form-control" name="description" placeholder="description" style=" font-size: large;width: 249px;height: 32px;margin-top: 14px;">
+    </div>  
+    <div>
+    <input type="number" name="year" id="" style="font-size: large;width: 249px;height: 32px;margin-top: 14px;">
+    </div>
+    <div >
+    <input type="file" name="image" id="" style="margin-top: 14px;">
+    </div>
+    <div >
+    <button type="submit" class="btn btn-primary" style="margin-left: 86px; margin-top: 14px;width: 85px;height: 31px; font-size: large;padding-top: 0px;">Submit</button>
+    </div>
+</div>
+</form>
+{% endblock %}
